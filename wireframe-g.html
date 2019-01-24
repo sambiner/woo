@@ -1,0 +1,31 @@
+<!-- notice how both the opening <html> tag and the closing </html> tag are NOT indented so you can clearly see the start and end of the code -->
+<html>
+	
+	<!-- the <head> section is for all the information that is needed by the browser but does NOT show up on the page -->
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Centering Content</title>
+		<link rel="stylesheet" href="wireframe-g.css" />
+	</head>
+
+	<!-- the <body> section is for all the content that is actually displayed on the page -->
+	<body>
+		<div class="big-square pink center-content" id="bigger" onclick="addColors(this)">
+			<img src="" class="restrict-img-size" id="image"/>
+		</div>
+		<div class="big-column" onclick="removeColors(this)">
+			<div class="big-rectangle center-content green" id="big">
+				<img src="images/oof.jpg" class="restrict-img-size" id="oof" >
+			</div>
+			<div class="flex">
+				<div class="rectangle blue" id="small1">
+				</div>
+				<div class="rectangle yellow" id="small2">
+				</div>
+			</div>
+		</div>
+		<script src="wireframe-g.js"></script>
+		<audio id="audiowoo" src="images/gnomed.mp3"></audio>
+	</body>
+</html>
