@@ -11,17 +11,21 @@
 
 	<!-- the <body> section is for all the content that is actually displayed on the page -->
 	<body>
-		<div class="big-square pink center-content" id="bigger" onclick="addColors(this)">
-			<img src="" class="restrict-img-size" id="image"/>
+		<div class="big-square pink center-content" id="bigger">
+			<img src="" class="restrict-img-size" id="image" onclick="addStuff(this)"/>
+			<audio id="audioof" src="images/oof.mp3"></audio>
+			<audio id="bruh" src="images/bruh.mp3"></audio>
 		</div>
-		<div class="big-column" onclick="removeColors(this)">
-			<div class="big-rectangle center-content green" id="big">
+		<div class="big-column">
+			<div class="big-rectangle center-content green" id="big" onclick="removeColors(this)">
 				<img src="images/oof.jpg" class="restrict-img-size" id="oof" >
 			</div>
-			<div class="flex">
-				<div class="rectangle blue" id="small1">
+			<div class="flex" onclick="no(this)">
+				<div class="rectangle blue center-content" id="small1">
+					<img src = "" class="restrict-img-size" id="blue"/>
 				</div>
-				<div class="rectangle yellow" id="small2">
+				<div class="rectangle yellow center-content" id="small2">
+					<img src="images/oof1.png" id="no" class="restrict-img-size"/>
 				</div>
 			</div>
 		</div>
